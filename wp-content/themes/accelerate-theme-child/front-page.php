@@ -24,7 +24,7 @@ get_header(); ?>
 	<section class="recent-posts">
 		<div class="site-content">
 			<div class="blog-post">
-				<h4>From the Blog Today</h4>
+				<h4>From Our Super Blog</h4>
 					<?php query_posts('posts_per_page=1'); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 							<h3><?php the_title(); ?></h3>
