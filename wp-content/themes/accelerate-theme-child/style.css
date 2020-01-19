@@ -94,3 +94,22 @@ Text Domain:  accelerate-theme-child
   font-size: .75em;
   font-weight: 500;
 }
+
+/* New Footer Styles */
+.social-media-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.menu-item {
+  list-style: none;
+}
+
+.menu-item i {
+  color: white;
+  background-color: black;
+  border-radius:50%;
+  padding: 10px;
+
+}
