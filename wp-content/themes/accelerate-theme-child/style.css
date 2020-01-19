@@ -22,6 +22,24 @@ Text Domain:  accelerate-theme-child
   background: none repeat scroll 0 0 #45ac9d;
 }
 
+.featured-work {
+  text-align: center;
+}
+.homepage-featured-work {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.individual-featured-work {
+  list-style: none;
+}
+
+.individual-featured-work h3 {
+  margin-top:1px;
+  font-size: 14px;
+}
+
 .blog-post {
   width: 50%;
   float: left;
@@ -37,6 +55,7 @@ Text Domain:  accelerate-theme-child
 
 .blog-post h3 {
   font-size: 1.5em;
+  margin-top: 1em;
 }
 
 .read-more-link {
