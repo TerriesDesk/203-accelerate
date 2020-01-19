@@ -28,8 +28,24 @@ function create_custom_post_types() {
             ),
             'public' => true,
             'has_archive' => true,
+						'menu_icon' => 'dashicons-portfolio',
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
 }
 add_action( 'init', 'create_custom_post_types' );
+
+
+//function to modify default WordPress query
+function custom_query_order( $query ) {
+
+    if( $query->is_archive() && get_query_var("post_type") == "case_studies" ) {
+
+        // Set parameters to modify the query
+        $query->set( 'orderby', 'date' );
+        $query->set( 'order', 'ASC' );
+    }
+}
+
+// Hook our custom query function to the pre_get_posts
+add_action( 'pre_get_posts', 'custom_query_order' );

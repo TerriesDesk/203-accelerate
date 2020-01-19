@@ -74,13 +74,17 @@ Text Domain:  accelerate-theme-child
 }
 
 .case-study-sidebar {
-  width: 30%;
+  width: 35%;
 }
 
 .case-study-images {
   width: 45%;
 }
 
+.case-study-images img {
+  width: 100%;
+  height: auto;
+}
 .case-study-sidebar h4 {
   margin-top: -15px;
   padding-bottom: 10px;
