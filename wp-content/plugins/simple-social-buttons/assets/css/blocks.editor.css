@@ -1,0 +1,21 @@
+.ssb_panel_wrapper .components-panel__row {
+  display: block;
+  padding-top: 10px; }
+
+.ssb_panel_wrapper .components-base-control {
+  width: 100%; }
+
+.ssb_panel_wrapper .components-base-control__help {
+  overflow-wrap: break-word; }
+
+.editor {
+  color: black; }
+
+.fb-like.small img {
+  width: 50px;
+  height: 20px; }
+
+.fb-like.large img {
+  height: 23px; }
+
+/*# sourceMappingURL=blocks.editor.css.map*/

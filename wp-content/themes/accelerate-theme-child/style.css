@@ -166,12 +166,21 @@ Text Domain:  accelerate-theme-child
 }
 
 /* 404 Page */
-.error-page-cont {
-  display: flex;
-  flex-flow: row wrap;
+.non-hero-image {
+    width: 100%;
+    height:500px;
+    background-image:url("img/taxi-photo2.jpg");
+    background-position: center center;
+    background-size: cover;
 }
 
-.error-page span {
+.error-page-text {
+  text-align: center;
+  color: white;
+}
+
+}
+.error-page-text span {
   color: #45ac9d;
   font-weight: bold;
 }
