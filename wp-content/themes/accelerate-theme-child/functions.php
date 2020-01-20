@@ -9,6 +9,10 @@
 * @subpackage Accelerate Marketing
 * @since Accelerate Marketing 2.0
 */
+// Add Featured Image Support
+add_theme_support( 'post-thumbnails' );
+
+
 
 // Enqueue scripts and styles
 function accelerate_child_scripts(){
@@ -32,6 +36,19 @@ function create_custom_post_types() {
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
+// Case Studies Custom Post Type
+  	register_post_type( 'services',
+  		array(
+		 	'labels' => array(
+		  	'name' => __( 'Services' ),
+		    'singular_name' => __( 'Service' )
+		  ),
+		  'public' => true,
+		  'has_archive' => true,
+			'menu_icon' => 'dashicons-star-filled',
+		  'rewrite' => array( 'slug' => 'about' ),
+		        )
+		    );
 }
 add_action( 'init', 'create_custom_post_types' );
 
@@ -47,5 +64,4 @@ function custom_query_order( $query ) {
     }
 }
 
-// Hook our custom query function to the pre_get_posts
 add_action( 'pre_get_posts', 'custom_query_order' );

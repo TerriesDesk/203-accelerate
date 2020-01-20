@@ -20,6 +20,7 @@ Text Domain:  accelerate-theme-child
 
 .button {
   background: none repeat scroll 0 0 #45ac9d;
+  margin: 30px 0 15px 0;
 }
 
 .featured-work {
@@ -125,4 +126,42 @@ Text Domain:  accelerate-theme-child
 #nf-field-4 {
   width: 200px;
   background-color: #45ac9d;
+}
+
+/* About Page */
+.about-header-cont {
+  width:50%;
+}
+.about-header {
+  color: white;
+}
+
+.about-top {
+  text-align: center;
+  width: 40%;
+  margin-top: -50px;
+}
+
+.about-page-article {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.about-page-article:nth-child(odd) figure {
+  order: 1;
+}
+.about-page-article-content {
+  width:70%;
+  order: 1;
+}
+
+
+.cta {
+  border-top: 1px solid gray;
+  font-weight: bold;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
 }
