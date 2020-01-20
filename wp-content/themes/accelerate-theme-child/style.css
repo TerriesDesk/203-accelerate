@@ -157,11 +157,21 @@ Text Domain:  accelerate-theme-child
   order: 1;
 }
 
-
 .cta {
   border-top: 1px solid gray;
   font-weight: bold;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
+}
+
+/* 404 Page */
+.error-page-cont {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.error-page span {
+  color: #45ac9d;
+  font-weight: bold;
 }
